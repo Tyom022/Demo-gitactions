@@ -1,10 +1,10 @@
 name: Second workflow
-on: workflow_dispathcer
+on: workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    - name: other run
-      steps:
+    steps:
+      - name: qo girtsy chi
         run: |
           echo "some text" >> text.txt
           ls
