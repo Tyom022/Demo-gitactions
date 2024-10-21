@@ -1,0 +1,12 @@
+name: Second workflow
+on: workflow_dispathcer
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    - name: other run
+      steps:
+        run: |
+          echo "some text" >> text.txt
+          ls
+          pwd
+          echo "${{ toJSON(github) }}"
